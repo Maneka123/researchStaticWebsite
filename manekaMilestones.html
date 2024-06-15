@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestones</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            text-align: center; /* Center text horizontally */
+            margin-bottom: 20px; /* Add margin to separate from details */
+            background-color: grey;
+            padding: 20px; /* Increase padding */
+            padding-bottom: 100px; /* Set bottom padding */
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 10px; /* Increase padding */
+            font-size: 16px; /* Increase font size */
+            border: 2px solid #ccc; /* Add border */
+            border-radius: 5px; /* Add border radius */
+        }
+
+        #assessment_details {
+            margin-top: 20px;
+        }
+
+        #assessment_details p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+		
+		
+		body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    h1 {
+      font-size: 28px;
+      color: #333;
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: black;
+    }
+	 ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      font-size: 20px;
+      color: #666;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .tool-image {
+      width: 40px; /* Adjust as needed */
+      height: auto; /* Adjust as needed */
+      margin-right: 10px;
+    }
+	
+	.center-content {
+      display: flex;
+      justify-content: center;
+    }
+    </style>
+</head>
+<body>
+
+<header class="bg-primary text-white text-center py-4">
+    <h1>Research Project[TMP-23-074]</h1>
+	<h3>Feline Health and Wellness Hub</h3>
+    <p>"Discover all-in-one cat care at Feline Hub. From symptom checking to breed prediction, access tools for a healthier, happier cat."</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">TrustyPet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nilki.html">Nilki</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="maneka.html">Maneka</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h1>Maneka Wijesundara</h1>
+   <img src="maneka.jpg" alt="Your Image" style="display: block; margin: auto; max-width: 70%; max-height: 50vh; border-radius: 50%;">
+  
+  <!--set of buttons-->
+<div class="containerButton mt-5">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="btn-group btn-group-horizontal">
+						<a href="manekaLiteratureSurvey.html" class="btn btn-primary">Literature Survey</a>
+						<a href="manekaResearchGap.html" class="btn btn-primary">Research Gap</a>
+						<a href="manekaResearchProblem.html" class="btn btn-primary">Research Problem</a>
+						<a href="manekaResearchObjectives.html" class="btn btn-primary">Research Objectives</a>
+						<a href="manekaMethodology.html" class="btn btn-primary">Methodology</a>
+						<a href="manekaTechnologies.html" class="btn btn-primary">Technologies Used</a>
+						<a href="manekaMilestones.html" class="btn btn-primary">Milestones</a>
+						<a href="manekaTimeline.html" class="btn btn-primary">Timeline</a>
+						<!--<a href="source_code.html" class="btn btn-primary">Source Code</a>-->
+						<a href="manekaDocuments.html" class="btn btn-primary">Documents</a>
+						<a href="manekaPresentations.html" class="btn btn-primary">Presentation Slides</a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--end set of buttons-->
+
+
+
+
+
+
+    <div class="container">
+        <h2 style="text-align: center;">Milestones</h2>
+        <label for="milestones">Choose a milestone:</label>
+        <select id="milestones" name="milestones">
+            <option value="project_proposal">Project Proposal</option>
+            <option value="progress_presentation_1">Progress Presentation-1</option>
+            <option value="progress_presentation_2">Progress Presentation-2</option>
+            <option value="final_assessment">Final Assessment</option>
+            <option value="viva">Viva</option>
+        </select>
+		<div id="assessment_details" >
+        <!-- Assessment details will be displayed here based on the selected milestone -->
+    </div>
+    </div>
+    <br><br><br><br>
+
+    <script>
+        document.getElementById('milestones').addEventListener('change', function() {
+            var milestone = this.value;
+            var assessmentDetails = document.getElementById('assessment_details');
+            var details = '';
+
+            switch(milestone) {
+                case 'project_proposal':
+                    details = "<p><strong>Date:</strong>enter date </p>" +
+                              "<p><strong>Marks Allocated:</strong> enter marks</p>" +
+                              "<p><strong>Assessment:</strong> Submission of a detailed project proposal outlining the objectives, methodology, and timeline of the project.</p>";
+                    break;
+                case 'progress_presentation_1':
+                    details = "<p><strong>Date:</strong>enter date</p>" +
+                              "<p><strong>Marks Allocated:</strong> enter marks</p>" +
+                              "<p><strong>Assessment:</strong> Presentation of the progress made in the project, including initial findings, challenges faced, and next steps.</p>";
+                    break;
+                case 'progress_presentation_2':
+                    details = "<p><strong>Date:</strong> enter date</p>" +
+                              "<p><strong>Marks Allocated:</strong>enter marks</p>" +
+                              "<p><strong>Assessment:</strong> Presentation of the continued progress in the project, addressing feedback from the first presentation, and outlining final steps towards completion.</p>";
+                    break;
+                case 'final_assessment':
+                    details = "<p><strong>Date:</strong> enter date</p>" +
+                              "<p><strong>Marks Allocated:</strong>enter marks</p>" +
+                              "<p><strong>Assessment:</strong> Evaluation of the final project deliverables, including code, documentation, and presentation.</p>";
+                    break;
+                case 'viva':
+                    details = "<p><strong>Date:</strong> enter date</p>" +
+                              "<p><strong>Marks Allocated:</strong>enter marks</p>" +
+                              "<p><strong>Assessment:</strong> Oral examination of the project, including questions on methodology, findings, and contributions.</p>";
+                    break;
+                default:
+                    details = "<p>Please select a milestone.</p>";
+            }
+
+            assessmentDetails.innerHTML = details;
+        });
+    </script>
+	
+	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!--start footer-->
+	<footer class="bg-dark text-white text-center py-3">
+		<p>&copy; 2024 Feline Health and Wellness Hub</p>
+		
+	</footer>
+
+	<!--end footer-->
+
+</body>
+</html>
